@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("localhost:5000", {
+			const socket = io("https://poopingmessage.onrender.com/", {
 				query: {
 					userId: authUser._id,
 				},
